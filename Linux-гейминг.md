@@ -3,7 +3,7 @@ tags:
   - type/article
 ---
 [Все поля должны быть согласованы с результатом исследования]
-# [Ссылка на канбан-доску по статье]
+# [[Linux-гейминг desk]]
 
 # [[International Journal of Open Information Technologies (INJOIT)]]
 
