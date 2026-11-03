@@ -27,8 +27,8 @@
     },
     {
       "type": "tag",
-      "name": "",
-      "value": "#type/source",
+      "name": "kanban-plugin",
+      "value": "type/source",
       "matchCaseSensitive": false,
       "match": "exact",
       "uid": "1d54-3164",

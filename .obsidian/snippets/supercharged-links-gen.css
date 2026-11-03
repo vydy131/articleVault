@@ -48,13 +48,13 @@ div[data-id="c176-aa28"] div.setting-item-description::after,
 }
 
 div[data-id="1d54-3164"] div.setting-item-description,
-[data-link-tags*="#type/source" i] {
+[data-link-tags*="type/source" i] {
     color: var(--1d54-3164-color) !important;
     font-weight: var(--1d54-3164-weight);
 }
 
 .c-1d54-3164-use-background div[data-id="1d54-3164"] div.setting-item-description,
-.c-1d54-3164-use-background .data-link-text[data-link-tags*="#type/source" i] {
+.c-1d54-3164-use-background .data-link-text[data-link-tags*="type/source" i] {
     background-color: var(--1d54-3164-background-color) !important;
     border-radius: 5px;
     padding-left: 2px;
@@ -63,12 +63,12 @@ div[data-id="1d54-3164"] div.setting-item-description,
 }
 
 div[data-id="1d54-3164"] div.setting-item-description::before,
-.data-link-icon[data-link-tags*="#type/source" i]::before {
+.data-link-icon[data-link-tags*="type/source" i]::before {
     content: var(--1d54-3164-before);
 }
 
 div[data-id="1d54-3164"] div.setting-item-description::after,
-.data-link-icon-after[data-link-tags*="#type/source" i]::after {
+.data-link-icon-after[data-link-tags*="type/source" i]::after {
     content: var(--1d54-3164-after);
 }
 
@@ -161,7 +161,7 @@ settings:
         default: '#ffffff'
     - 
         id: 1d54-3164
-        title: tag is #type/source
+        title: tag is type/source
         description: Example note
         type: heading
         collapsed: true
