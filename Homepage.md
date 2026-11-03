@@ -33,5 +33,6 @@ SORT (length(file.inlinks) + length(file.outlinks)) DESC
 ```dataview
 TABLE WITHOUT ID
 file.link as "Сироты", file.path as "Путь"
+FROM -"template"
 WHERE (!(file.inlinks) AND !(file.outlinks))
 ```
