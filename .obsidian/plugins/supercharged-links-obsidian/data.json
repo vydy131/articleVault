@@ -48,6 +48,18 @@
       "selectAppend": true,
       "selectPrepend": true,
       "selectBackground": true
+    },
+    {
+      "type": "tag",
+      "name": "kanban-plugin",
+      "value": "type/journal",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "eb4c-7284",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
     }
   ]
 }
