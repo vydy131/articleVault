@@ -1,5 +1,7 @@
 {
-  "targetAttributes": [],
+  "targetAttributes": [
+    "kanban-plugin"
+  ],
   "targetTags": true,
   "getFromInlineField": false,
   "enableTabHeader": true,
