@@ -36,6 +36,18 @@
       "selectAppend": true,
       "selectPrepend": true,
       "selectBackground": true
+    },
+    {
+      "type": "attribute",
+      "name": "kanban-plugin",
+      "value": "board",
+      "matchCaseSensitive": false,
+      "match": "exact",
+      "uid": "cf13-e82b",
+      "selectText": true,
+      "selectAppend": true,
+      "selectPrepend": true,
+      "selectBackground": true
     }
   ]
 }
