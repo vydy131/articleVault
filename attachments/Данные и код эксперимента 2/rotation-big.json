@@ -1,0 +1,128 @@
+[
+  {
+    "project": "saleor",
+    "shift": 1,
+    "pred": {
+      "PromotionRuleTranslation": "order",
+      "OrderDiscount": "order",
+      "CollectionChannelListing": "order",
+      "DigitalContentUrl": "order",
+      "VariantChannelListingPromotionRule": "order",
+      "CollectionProduct": "order",
+      "ProductTranslation": "order",
+      "Voucher": "order",
+      "OrderGrantedRefundLine": "order",
+      "Order": "order",
+      "PromotionTranslation": "order",
+      "Promotion": "order",
+      "Fulfillment": "order",
+      "OrderLine": "order",
+      "FulfillmentLine": "order"
+    }
+  },
+  {
+    "project": "netbox",
+    "shift": 1,
+    "pred": {
+      "Manufacturer": "dcim",
+      "ConsolePortTemplate": "circuits",
+      "ConsolePort": "circuits",
+      "CabledObjectModel": "circuits",
+      "ModularComponentModel": "dcim",
+      "VLANGroup": "dcim",
+      "Aggregate": "dcim",
+      "Provider": "circuits",
+      "VirtualCircuitTermination": "circuits",
+      "IPAddress": "dcim",
+      "RIR": "dcim",
+      "VirtualCircuit": "circuits",
+      "VirtualCircuitType": "circuits",
+      "ProviderAccount": "circuits",
+      "VLANTranslationRule": "dcim"
+    }
+  },
+  {
+    "project": "erpnext",
+    "shift": 1,
+    "pred": {
+      "SupplierGroupItem": "stock",
+      "ShippingRuleCountry": "selling",
+      "PaymentLedgerEntry": "accounts",
+      "MonthlyDistributionPercentage": "stock",
+      "PurchaseInvoiceItem": "stock",
+      "ItemAttributeValue": "selling",
+      "ItemReorder": "accounts",
+      "SerialandBatchBundle": "selling",
+      "StockReconciliationItem": "stock",
+      "Manufacturer": "selling",
+      "SalesOrderItem": "selling",
+      "ProductBundle": "selling",
+      "ProductBundleItem": "selling",
+      "SalesPartnerType": "selling",
+      "SMSCenter": "selling"
+    }
+  },
+  {
+    "project": "saleor",
+    "shift": 2,
+    "pred": {
+      "PromotionRuleTranslation": "product",
+      "OrderDiscount": "discount",
+      "CollectionChannelListing": "product",
+      "DigitalContentUrl": "product",
+      "VariantChannelListingPromotionRule": "product",
+      "CollectionProduct": "product",
+      "ProductTranslation": "product",
+      "Voucher": "discount",
+      "OrderGrantedRefundLine": "order",
+      "Order": "order",
+      "PromotionTranslation": "product",
+      "Promotion": "discount",
+      "Fulfillment": "order",
+      "OrderLine": "order",
+      "FulfillmentLine": "order"
+    }
+  },
+  {
+    "project": "netbox",
+    "shift": 2,
+    "pred": {
+      "Manufacturer": "circuits",
+      "ConsolePortTemplate": "circuits",
+      "ConsolePort": "circuits",
+      "CabledObjectModel": "dcim",
+      "ModularComponentModel": "circuits",
+      "VLANGroup": "circuits",
+      "Aggregate": "circuits",
+      "Provider": "ipam",
+      "VirtualCircuitTermination": "circuits",
+      "IPAddress": "ipam",
+      "RIR": "ipam",
+      "VirtualCircuit": "circuits",
+      "VirtualCircuitType": "circuits",
+      "ProviderAccount": "circuits",
+      "VLANTranslationRule": "circuits"
+    }
+  },
+  {
+    "project": "erpnext",
+    "shift": 2,
+    "pred": {
+      "SupplierGroupItem": "accounts",
+      "ShippingRuleCountry": "stock",
+      "PaymentLedgerEntry": "accounts",
+      "MonthlyDistributionPercentage": "accounts",
+      "PurchaseInvoiceItem": "selling",
+      "ItemAttributeValue": "accounts",
+      "ItemReorder": "stock",
+      "SerialandBatchBundle": "stock",
+      "StockReconciliationItem": "accounts",
+      "Manufacturer": "accounts",
+      "SalesOrderItem": "selling",
+      "ProductBundle": "stock",
+      "ProductBundleItem": "selling",
+      "SalesPartnerType": "accounts",
+      "SMSCenter": "stock"
+    }
+  }
+]

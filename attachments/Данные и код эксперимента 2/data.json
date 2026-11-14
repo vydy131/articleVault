@@ -1,0 +1,143 @@
+{
+  "saleor": {
+    "discount": {
+      "label": "discounts and promotions",
+      "n": 17,
+      "anchors": [
+        "VoucherTranslation | voucher, name, get_translated_object_id, get_translated_keys",
+        "CheckoutLineDiscount | line, unique_type"
+      ],
+      "test": [
+        "PromotionRuleTranslation | name, description, promotion_rule, get_translated_object_id, get_translated_keys",
+        "OrderDiscount | order, old_id",
+        "Voucher | type, name, usage_limit, start_date, end_date",
+        "PromotionTranslation | name, description, promotion, get_translated_object_id, get_translated_keys",
+        "Promotion | id, name, type, description, old_sale_id"
+      ]
+    },
+    "order": {
+      "label": "orders and fulfillment",
+      "n": 7,
+      "anchors": [
+        "OrderEvent | date, type, order, parameters, user",
+        "OrderGrantedRefund | created_at, updated_at, amount_value, amount, currency"
+      ],
+      "test": [
+        "OrderGrantedRefundLine | order_line, quantity, granted_refund, reason",
+        "Order | id, number, use_old_id, created_at, updated_at",
+        "Fulfillment | fulfillment_order, order, status, tracking_number, created_at",
+        "OrderLine | id, old_id, created_at, order, variant",
+        "FulfillmentLine | order_line, fulfillment, quantity, stock"
+      ]
+    },
+    "product": {
+      "label": "product catalog",
+      "n": 18,
+      "anchors": [
+        "ProductMedia | product, image, alt, type, external_url",
+        "Category | name, slug, description, description_plaintext, updated_at"
+      ],
+      "test": [
+        "CollectionChannelListing | collection, channel",
+        "DigitalContentUrl | token, content, created_at, download_num, line",
+        "VariantChannelListingPromotionRule | variant_channel_listing, promotion_rule, discount_amount, discount, currency",
+        "CollectionProduct | collection, product, get_ordering_queryset",
+        "ProductTranslation | product, name, description, get_translated_object_id, get_translated_keys"
+      ]
+    }
+  },
+  "netbox": {
+    "circuits": {
+      "label": "telecom circuits and providers",
+      "n": 12,
+      "anchors": [
+        "CircuitGroup | tenant",
+        "CircuitTermination | circuit, term_side, termination_type, termination_id, termination"
+      ],
+      "test": [
+        "Provider | name, slug, asns, clone_fields",
+        "VirtualCircuitTermination | virtual_circuit, role, interface, description, get_absolute_url",
+        "VirtualCircuit | cid, provider_network, provider_account, type, status",
+        "VirtualCircuitType",
+        "ProviderAccount | provider, account, name, clone_fields"
+      ]
+    },
+    "dcim": {
+      "label": "data center infrastructure management",
+      "n": 52,
+      "anchors": [
+        "PowerOutletTemplate | type, power_port, feed_leg, component_model, clean",
+        "Location | site, status, tenant, facility, prefixes"
+      ],
+      "test": [
+        "Manufacturer",
+        "ConsolePortTemplate | type, component_model, instantiate, to_yaml",
+        "ConsolePort | type, speed, clone_fields",
+        "CabledObjectModel | cable, cable_end, mark_connected, cable_terminations, clean",
+        "ModularComponentModel | module, inventory_items"
+      ]
+    },
+    "ipam": {
+      "label": "IP address management",
+      "n": 19,
+      "anchors": [
+        "Role | weight",
+        "ASN | rir, asn, tenant, prerequisite_models, asn_asdot"
+      ],
+      "test": [
+        "VLANGroup | name, slug, scope_type, scope_id, scope",
+        "Aggregate | prefix, rir, tenant, date_added, clone_fields",
+        "IPAddress | address, vrf, tenant, status, role",
+        "RIR | is_private",
+        "VLANTranslationRule | policy, description, local_vid, remote_vid, prerequisite_models"
+      ]
+    }
+  },
+  "erpnext": {
+    "accounts": {
+      "label": "accounts and finance",
+      "n": 165,
+      "anchors": [
+        "PaymentEntryReference",
+        "JournalEntryTemplateAccount"
+      ],
+      "test": [
+        "SupplierGroupItem",
+        "ShippingRuleCountry",
+        "PaymentLedgerEntry | validate_account, validate_account_details, validate_allowed_dimensions, validate_dimensions_for_pl_and_bs, validate",
+        "MonthlyDistributionPercentage",
+        "PurchaseInvoiceItem"
+      ]
+    },
+    "selling": {
+      "label": "sales and customers",
+      "n": 16,
+      "anchors": [
+        "Quotation | set_indicator, validate, before_submit, validate_valid_till, set_has_alternative_item",
+        "QuotationItem"
+      ],
+      "test": [
+        "SalesOrderItem",
+        "ProductBundle | autoname, validate, on_trash, validate_main_item, validate_child_items",
+        "ProductBundleItem",
+        "SalesPartnerType",
+        "SMSCenter | create_receiver_list, get_receiver_nos, send_sms"
+      ]
+    },
+    "stock": {
+      "label": "stock and inventory",
+      "n": 72,
+      "anchors": [
+        "QuickStockBalance",
+        "ItemWebsiteSpecification"
+      ],
+      "test": [
+        "ItemAttributeValue",
+        "ItemReorder",
+        "SerialandBatchBundle | validate, validate_serial_nos_inventory, validate_serial_nos_duplicate, throw_error_message, set_incoming_rate",
+        "StockReconciliationItem",
+        "Manufacturer | onload"
+      ]
+    }
+  }
+}
